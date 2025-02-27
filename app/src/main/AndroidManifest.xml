@@ -13,6 +13,18 @@
         android:theme="@style/Theme.AttendenceMonitoring"
         tools:targetApi="31">
         <activity
+            android:name=".teacher_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".teacher_login"
+            android:exported="false" />
+        <activity
+            android:name=".teacher_mainActivity"
+            android:exported="false" />
+        <activity
             android:name=".student_registration"
             android:exported="false" />
         <activity
@@ -22,13 +34,10 @@
             android:name=".SelectRole"
             android:exported="false" />
         <activity
-            android:name=".student_registration"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

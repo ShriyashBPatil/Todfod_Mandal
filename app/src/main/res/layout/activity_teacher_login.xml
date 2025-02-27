@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacher_login">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="414dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="4dp"
+        android:background="#0821A6"
+        android:backgroundTint="#0821A6"
+        android:gravity="center"
+        android:text="Teacher Login"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/teach_login_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/teach_login_email"
+        android:layout_width="366dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Teacher Email"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/teach_login_pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/teach_login_pass"
+        android:layout_width="365dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/tech_log_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tech_log_btn"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="340dp"
+        android:background="#0821A6"
+        android:backgroundTint="#0821A6"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

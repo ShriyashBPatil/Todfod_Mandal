@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="432dp"
         android:layout_height="79dp"
-        android:background="#3F51B5"
+        android:background="#0821A6"
         android:gravity="center"
         android:text="Attendance Login"
         android:textColor="#FFFFFF"
@@ -51,7 +51,7 @@
         android:layout_width="338dp"
         android:layout_height="49dp"
         android:layout_marginTop="32dp"
-        android:background="#3F51B5"
+        android:background="#0821A6"
         android:gravity="center"
         android:text="Login"
         android:textColor="#FFFFFF"
@@ -71,5 +71,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
         app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/teach_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Login as Teacher"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

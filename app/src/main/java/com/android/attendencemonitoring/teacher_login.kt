@@ -12,14 +12,14 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.auth.FirebaseAuth
 
-class Login : AppCompatActivity() {
+class teacher_login : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_teacher_login)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -31,24 +31,11 @@ class Login : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         // Initialize views
-        val registration = findViewById<TextView>(R.id.registration)
-        val loginEmail = findViewById<EditText>(R.id.LoginEmail)
-        val loginPass = findViewById<EditText>(R.id.LoginPassword)
-        val loginBtn = findViewById<TextView>(R.id.btnLogin)
-        val teach_login = findViewById<TextView>(R.id.teach_login)
 
-        teach_login.setOnClickListener {
-            val intent = Intent(this, teacher_login::class.java) // Ensure correct class name
-            startActivity(intent)
-        }
+        val loginEmail = findViewById<EditText>(R.id.teach_login_email)
+        val loginPass = findViewById<EditText>(R.id.teach_login_pass)
+        val loginBtn = findViewById<TextView>(R.id.tech_log_btn)
 
-        // Navigate to registration page
-        registration.setOnClickListener {
-            val intent = Intent(this, SelectRole::class.java) // Ensure correct class name
-            startActivity(intent)
-        }
-
-        // Login Button Click Listener
         loginBtn.setOnClickListener {
             val email = loginEmail.text.toString().trim()
             val password = loginPass.text.toString().trim()
@@ -71,7 +58,7 @@ class Login : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, MainActivity::class.java) // Change to your dashboard activity
+                    val intent = Intent(this, teacher_dashboard::class.java) // Change to your dashboard activity
                     startActivity(intent)
                     finish()
                 } else {

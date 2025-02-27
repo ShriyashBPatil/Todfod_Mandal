@@ -66,8 +66,9 @@ class student_registration : AppCompatActivity() {
                     val student = hashMapOf(
                         "name" to name,
                         "rollNo" to rollNo,
-                        "class" to stdClass,
-                        "email" to email
+                        "Class" to stdClass,
+                        "email" to email,
+                        "role" to "student"
                     )
 
                     // Store in Firestore instead of Realtime Database
