@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="412dp"
+        android:layout_height="54dp"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:text="Attendance Registration"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/studentemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/std_reg_email"
+        android:layout_width="386dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Student Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/stdclass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/std_reg_pass"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/std_reg_pass_conf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/std_reg_pass_conf"
+        android:layout_width="370dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/std_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/stdclass"
+        android:layout_width="383dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Student Class"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/stdRollno"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/stdRollno"
+        android:layout_width="379dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Student Roll Number"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/std_reg_pass"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/std_reg"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="116dp"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/studentemail"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Student Email"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/std_reg_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
