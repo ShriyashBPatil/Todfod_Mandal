@@ -25,13 +25,6 @@
             android:name=".student_registration"
             android:exported="false" />
         <activity
-            android:name=".ui.login.student_registration"
-            android:exported="false"
-            android:label="@string/title_activity_student_registration" />
-        <activity
-            android:name=".registration"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

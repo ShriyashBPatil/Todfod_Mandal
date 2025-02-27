@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="12dp" /> <!-- Adjust the corner radius as needed -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" /> <!-- Change the color and width as needed -->
+    <solid android:color="#15237E" /> <!-- Change the background color as needed -->
+    <padding
+        android:left="12dp"
+        android:top="8dp"
+        android:right="12dp"
+        android:bottom="8dp" /> <!-- Adjust the padding as needed -->
+</shape>
